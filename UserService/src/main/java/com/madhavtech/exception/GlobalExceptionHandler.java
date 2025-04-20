@@ -18,4 +18,11 @@ public class GlobalExceptionHandler extends RuntimeException{
                 .build();
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(build);
     }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<String> handleAll(Exception ex) {
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body("Something went wrong: " + ex.getMessage());
+    }
+
 }

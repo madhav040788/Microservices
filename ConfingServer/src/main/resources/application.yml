@@ -1,0 +1,10 @@
+server:
+  port: 8085
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/madhav040788/MicroservicesConfig-Server
+          clone-on-start: true

@@ -1,6 +1,7 @@
 package com.madhavtech.service;
 
 import com.madhavtech.entities.Rating;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.*;
 
@@ -10,6 +11,9 @@ public interface RatingService {
 
     //getAllRating
     List<Rating> getAllRatings();
+
+    //getsingleRating
+    Rating getOneRating(String userId);
     //getRatingByUserId
     List<Rating> getRatingByUserId(String userId);
 

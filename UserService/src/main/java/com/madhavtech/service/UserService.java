@@ -10,7 +10,7 @@ public interface UserService {
     //getallusers
      List<User> getAllUsers();
      //get single user
-     User getSingleUser(String userId);
+     User getSingleUser(String userId); // ctrl+alt+b ==> go on impl this
 
      //deleteUser
     void deleteUser(String userId);
